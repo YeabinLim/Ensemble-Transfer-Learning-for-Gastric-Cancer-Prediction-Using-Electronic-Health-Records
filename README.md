@@ -7,7 +7,7 @@
 - **kd_data.csv** :  data of patients with atrophic gastritis or gastric cancer at the Kangdong Sacred Heart Hospital(KSHH), which were converted into the OMOP-CDM.
 - **result.csv** : Ensemble transfer learning model's result csv file.
 - **ensemble_data.csv** : Ensemble data csv file.
-
+</br>
 
 ## Ensemble Transfer Learning for Gastric Cancer Model Plot
 ![그림2](https://github.com/YeabinLim/Ensemble_Transfer_Learning_for_Gastric_Cancer/assets/118752772/43f06ec5-a160-434e-b28a-5406103af22a)
@@ -20,7 +20,8 @@ Stacking ensemble learning is applied to achieve the final prediction by combini
 
 ### Explanation
 The explanation process consists of two steps. For population-level explanation, permutation feature importance is applied to the source models, which are trained on extensive population health checkup data. For personal-level explanation, **SHAP (Shapley Additive Explanations)** is used on high-risk individual patients.
-
+</br>
+</br>
 
 ## Result
 ### Performance Evaluation
