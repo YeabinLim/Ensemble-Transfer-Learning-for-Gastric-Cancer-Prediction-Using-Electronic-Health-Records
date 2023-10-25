@@ -42,5 +42,5 @@ The explanation process consists of two steps. For population-level explanation,
 | ----------- | ----------- | -------- | -------- | -------- |
 | 0.75        | 0.92        | 0.93     | 0. 88    | 0.86     
 
-✔️ Ensemble Transfer Learning method outperformed all other methods in terms of specificity, F1-score, accuaracy, and AUC, which achieved 92%, 93%, 88%, 86%, respectively.
+✔️ Ensemble Transfer Learning method outperformed all other methods in terms of specificity, F1-score, accuaracy, and AUC, which achieved **92%**, **93%**, **88%**, **86%**, respectively.
 
