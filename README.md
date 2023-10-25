@@ -1,12 +1,12 @@
 # Ensemble-Transfer-Learning-for-Gastric-Cancer-Prediction-Using-Electronic-Health-Records
-
+> The code and data on this page for the realization of the paper
 
 
 ## Data
-- **nhis_data.csv** : 
-- **kd_data.csv**
+- **nhis_data.csv** : medical checkup data for patients with atrophic gastritis or gastric cancer from 2002 to 201 at 3National Health Insurance Service(NHIS) in South Korea, which were converted into the OMOP–CDM.
+- **kd_data.csv** :  data of patients with atrophic gastritis or gastric cancer at the Kangdong Sacred Heart Hospital(KSHH), which were converted into the OMOP-CDM.
 - **result.csv** : Ensemble transfer learning model's result csv file.
-- **ensemble_data.csv** : Ensemble 
+- **ensemble_data.csv** : Ensemble data csv file.
 
 
 ## Ensemble Transfer Learning for Gastric Cancer Model Plot
@@ -24,21 +24,22 @@ The explanation process consists of two steps. For population-level explanation,
 
 ## Result
 ### Performance Evaluation
-#### Learning from a single dataset
-- Used only the small dataset from KSHH as the training data and test data.
+#### Transfer Learning
+- . A pre-trained model was generated using the NHIS data, and then the pre-trained model was fine-tuned using the KSHH model.
   
 | Model          | Sensitivity | Specificity | F1-Score | Accuracy | AUC   |
 | -------------- | ----------- | ----------- | -------- | -------- | ----- |
-| SVM            | 0.48        | 0.84        | 0.66     | 0.76     | 0.80  |
-| Random Forest  | 0.44        | 0.74        | 0.58     | 0.67     | 0.71  |
-| DNN            | 1.00        | 0.38        | 0.51     | 0.51     | 0.80  |
+| SVM            | 0.71        | 0.60        | 0.62     | 0.65     | 0.75  |
+| Random Forest  | 0.44        | 0.74        | 0.58     | 0.67     | 0.72  |
+| DNN            | 0.44        | 0.80        | 0.62     | 0.72     | 0.79  |
 
 
-#### Learning from mixed datasets
-- Used the NHIS dataset as training data and the KSHH dataset as test data.
+#### Ensemble Transfer Learning
+- Applied the stacking ensemble to the three transfer learning models
 
-| Model          | Sensitivity | Specificity | F1-Score | Accuracy | AUC   |
-| -------------- | ----------- | ----------- | -------- | -------- | ----- |
-| SVM            | 0.25        | 0.80        | 0.     | 0.76     | 0.80  |
-| Random Forest  | 0.44        | 0.74        | 0.58     | 0.67     | 0.71  |
-| DNN            | 1.00        | 0.38        | 0.51     | 0.51     | 0.80  |
+| Sensitivity | Specificity | F1-Score | Accuracy | AUC   |
+| ----------- | ----------- | -------- | -------- | -------- |
+| 0.75        | 0.92        | 0.93     | 0. 88    | 0.86     
+
+✔️ Ensemble Transfer Learning method outperformed all other methods in terms of specificity, F1-score, accuaracy, and AUC, which achieved 92%, 93%, 88%, 86%, respectively.
+
