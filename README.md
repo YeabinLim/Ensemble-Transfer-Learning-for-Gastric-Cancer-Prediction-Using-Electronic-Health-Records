@@ -26,7 +26,7 @@ The explanation process consists of two steps. For population-level explanation,
 ## Result
 ### Performance Evaluation
 #### Transfer Learning
-- . A pre-trained model was generated using the NHIS data, and then the pre-trained model was fine-tuned using the KSHH model.
+- A pre-trained model was generated using the NHIS data, and then the pre-trained model was fine-tuned using the KSHH model.
   
 | Model          | Sensitivity | Specificity | F1-Score | Accuracy | AUC   |
 | -------------- | ----------- | ----------- | -------- | -------- | ----- |
