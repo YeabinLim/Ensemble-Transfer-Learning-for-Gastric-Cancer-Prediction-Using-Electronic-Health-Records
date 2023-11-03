@@ -27,14 +27,16 @@ The explanation process consists of two steps. For population-level explanation,
 ### Performance Evaluation
 #### Learning from a single dataset
 - Used only the small dataset from KSHH as the training data and test data.
+  
 | Model          | Sensitivity | Specificity | F1-Score | Accuracy | AUC   |
 | -------------- | ----------- | ----------- | -------- | -------- | ----- |
 | SVM            | 0.48        | 0.84        | 0.66     | 0.76     | 0.80  |
 | Random Forest  | 0.44        | 0.74        | 0.58     | 0.67     | 0.71  |
-| DNN            | 1.00        | 0.38        | 0.51     | 0.51     | 0.7980  |
+| DNN            | 1.00        | 0.38        | 0.51     | 0.51     | 0.80  |
 
 #### Learning from mixed datasets
 - Used the NHIS dataset as training data and the KSHH dataset as test data.
+  
 | Model          | Sensitivity | Specificity | F1-Score | Accuracy | AUC   |
 | -------------- | ----------- | ----------- | -------- | -------- | ----- |
 | SVM            | 0.51        | 0.47        | 0.44     | 0.47     | 0.56  |
